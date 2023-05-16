@@ -3,13 +3,11 @@
   import welcome from "$lib/images/svelte-welcome.webp";
   import welcome_fallback from "$lib/images/svelte-welcome.png";
 
-  if (import.meta.vitest) {
-    describe("sum test", () => {
-      it("adds 1 + 2 to equal 3", () => {
-        expect(1 + 2).toBe(3);
-      });
+  describe("sum test", () => {
+    it("adds 1 + 2 to equal 3", () => {
+      expect(1 + 2).toBe(3);
     });
-  }
+  });
 </script>
 
 <svelte:head>
